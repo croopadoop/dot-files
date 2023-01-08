@@ -24,5 +24,7 @@ be given or added to the message history.
 
 local options = { noremap = true, silent = true }
 
+vim.keymap.set("v", "K", ":m '>-2<CR>gv=gv")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.g.mapleader = " "
-vim.keymap.set("i", "jk", "<ESC>", options)
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
