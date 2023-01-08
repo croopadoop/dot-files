@@ -11,17 +11,18 @@ return require("packer").startup(function(use)
 
 	-- color theme
 	use({
-		"rose-pine/neovim", 
-		as = "rose-pine", 
+		"rose-pine/neovim",
+		as = "rose-pine",
 	})
 
 	-- syntax
 	use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
 
-	-- git
-
-	-- which-key
-	use("folke/which-key.nvim")
+	-- lualine for the evil line
+    use {
+        "nvim-lualine/lualine.nvim",
+        requires = { "kyazdani42/nvim-web-devicons", opt = true }
+    }
 
 	-- LSP
 	use {

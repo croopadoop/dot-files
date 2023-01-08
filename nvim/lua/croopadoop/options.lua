@@ -9,7 +9,6 @@ vim.o.backup = false
 vim.o.writebackup = false
 vim.o.undofile = true
 vim.o.swapfile = false
-vim.o.clipboard = "unnamedplus"
 
 -- Text editing 
 vim.o.smartcase = true
