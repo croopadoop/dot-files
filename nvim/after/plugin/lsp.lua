@@ -37,8 +37,9 @@ lsp.on_attach(
         vim.keymap.set("n", "]d", function() vim.diagnostic.goto_next() end, opts)
         vim.keymap.set("n", "[d", function() vim.diagnostic.goto_prev() end, opts)
         vim.keymap.set("n", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
-        vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format() end, opts)
+        vim.keymap.set("n", "<leader>fs", function() vim.lsp.buf.format() vim.cmd.write() end, opts)
     end
+
 )
 -- Configure lua language server for neovim
 lsp.nvim_workspace()
