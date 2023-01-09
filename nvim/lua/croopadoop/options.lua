@@ -1,16 +1,16 @@
--- General 
+-- General
 vim.o.guicursor = ""
 vim.o.termguicolors = true
 vim.o.updatetime = 50
 vim.o.colorcolumn = "115"
 
--- File 
+-- File
 vim.o.backup = false
 vim.o.writebackup = false
 vim.o.undofile = true
 vim.o.swapfile = false
 
--- Text editing 
+-- Text editing
 vim.o.smartcase = true
 vim.o.expandtab = true
 vim.o.wrap = false
@@ -21,7 +21,7 @@ vim.o.tabstop = 4
 vim.o.hlsearch = false
 vim.o.incsearch = true -- Incremental Search
 
--- Line number 
+-- Line number
 -- Change numberwith to 6 for better readability when there are hundreds of lines of code
 vim.o.number = true
 vim.o.numberwidth = 2
@@ -29,7 +29,7 @@ vim.o.relativenumber = true
 vim.o.scrolloff = 8
 vim.o.signcolumn = "yes"
 
--- Search 
+-- Search
 vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.jumpoptions = true
