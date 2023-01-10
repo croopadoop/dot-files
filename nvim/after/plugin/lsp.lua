@@ -1,3 +1,6 @@
+-- Reserve space for diagnostics
+vim.o.signcolumn = "yes"
+
 local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
@@ -17,6 +20,10 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
     ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
     ["<C-y>"] = cmp.mapping.confirm({ select = true }),
     ["<C-Space>"] = cmp.mapping.complete(),
+})
+
+lsp.setup_nvim_cmp({
+    mapping = cmp_mappings,
 })
 
 lsp.set_preferences({

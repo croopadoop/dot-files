@@ -27,9 +27,11 @@ vim.o.number = true
 vim.o.numberwidth = 2
 vim.o.relativenumber = true
 vim.o.scrolloff = 8
-vim.o.signcolumn = "yes"
 
 -- Search
 vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.jumpoptions = true
+
+vim.o.splitbelow = true
+vim.o.splitright = true
