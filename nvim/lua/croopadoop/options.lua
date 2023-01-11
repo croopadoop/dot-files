@@ -1,5 +1,5 @@
 -- General
-vim.o.guicursor = ""
+vim.o.guicursor = "n-v-c-i:block"
 vim.o.termguicolors = true
 vim.o.updatetime = 50
 vim.o.colorcolumn = "115"
@@ -33,5 +33,6 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.jumpoptions = true
 
+-- Splits
 vim.o.splitbelow = true
 vim.o.splitright = true
